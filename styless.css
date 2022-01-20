@@ -1,0 +1,160 @@
+body {
+  background-color: beige;
+  font-family: lora;
+  margin: 10px;
+}
+
+h1, h2, nav, footer, article {
+  padding: 1vh 1vw;
+}
+
+h1, h2, footer, nav, .Bottom {
+  text-align: center;
+  /*lägger texten i mitten hos följande delar*/
+}
+
+.Bottom img {
+  display: inline-block;
+  /* Lägger footer bilderna i rad */
+}
+
+img.dalmatian {
+  /*lägger ena bilden i mitten */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  height: 35%;
+  margin-bottom: 20px;
+}
+
+img.football {
+  /*lägger andra bilden i mitten*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+header {
+  /*box1*/
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 70%
+}
+
+article {
+  /*box2*/
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: justify;
+}
+
+section.Bottom {
+  /*box3*/
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 2vw;
+  border: 1px solid black;
+  border-radius: 25px
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  font-size: 1.5rem;
+}
+
+/* A element star*/
+a {
+  color: hsla(90, 0%, 30%, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  font-size: 2rem;
+  margin: 0 1.5vw;
+}
+
+/* A element end*/
+/* layout start*/
+.Top {}
+
+@media only screen and (min-width:600px) {
+  .Top {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* layout end*/
+/*form start*/
+form {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 1vh 1vw 0 0vw;
+}
+
+input, select, textarea {
+  margin: 0 1vw 0 1vw;
+}
+
+@media (min-width:600px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  legend {
+    grid-column: 1;
+    text-align: right;
+  }
+
+  label {
+    grid-column: 1;
+    text-align: left;
+    margin: 1vh 1vw;
+  }
+
+  input, select, button {
+    grid-column: 2/-1;
+    margin: 1vh 1vw;
+  }
+
+  input {
+    padding: 10px;
+    margin: 10px
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  fieldset {
+    margin: 10px;
+  }
+}
+
+/*form end*/
